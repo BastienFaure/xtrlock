@@ -25,7 +25,7 @@ xtrlock:	xtrlock.o
 xtrlock.o:	xtrlock.c
 
 install:	xtrlock
-		$(INSTALL) -c -m 2755 -o root -g shadow xtrlock /usr/bin
+		$(INSTALL) -c -m 4755 -o root xtrlock /usr/bin
 
 install.man:
 		$(INSTALL) -c -m 644 xtrlock.man /usr/man/man1/xtrlock.1x
