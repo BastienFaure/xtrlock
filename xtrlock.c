@@ -160,7 +160,7 @@ int main(int argc, char **argv){
 
   if (XGrabPointer(display,window,False,(KeyPressMask|KeyReleaseMask)&0,
                GrabModeAsync,GrabModeAsync,None,
-               cursor,CurrentTime)!=GrabSuccess) {
+               None,CurrentTime)!=GrabSuccess) {
     XUngrabKeyboard(display,CurrentTime);
     fprintf(stderr,"xtrlock: cannot grab pointer\n");
     exit(1);
